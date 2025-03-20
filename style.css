@@ -1,0 +1,103 @@
+body {
+    background-color: pink;
+    font-family: 'Gill Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+/* Storage section (bottom right corner) */
+.storage {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 250px;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storage h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.saved-images {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.saved-images img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* Hide the canvas (only used for capturing images) */
+canvas {
+    display: none;
+}
+
+/* Camera Roll Button (inside storage section at the bottom) */
+#camera-roll {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#camera-roll:hover {
+    background-color: darkblue;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}

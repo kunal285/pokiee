@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>pookiee</h1>
+
+    <div class="container">
+        <video id="webcam-video" width="640" height="480" autoplay playsinline muted></video>
+        <button id="capture-button">Capture Picture</button>
+        <canvas id="captured-image" width="640" height="480"></canvas>
+        <p class="error-message" id="error-message">⚠️ Camera access denied or not supported.</p>
+    </div>
+
+    <!-- Storage section (Bottom Right) -->
+    <div class="storage">
+        <h3>Saved Images</h3>
+        <div class="saved-images" id="saved-images"></div>
+
+        <!-- Camera Roll Button at the end of the scrollable section -->
+        <button id="camera-roll">Camera Roll</button>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
