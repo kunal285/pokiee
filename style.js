@@ -1,12 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('webcam-video');
-    const filterSelect = document.getElementById('filter');
-
-    // Apply the selected filter to the video element
-    filterSelect.addEventListener('change', () => {
-        video.style.filter = filterSelect.value;
-    });
-
     const webcamVideo = document.getElementById('webcam-video');
     const captureButton = document.getElementById('capture-button');
     const capturedImageCanvas = document.getElementById('captured-image');
